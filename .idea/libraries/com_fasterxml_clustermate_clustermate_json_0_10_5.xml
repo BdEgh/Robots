@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="com.fasterxml.clustermate:clustermate-json:0.10.5" type="repository">
+    <properties maven-id="com.fasterxml.clustermate:clustermate-json:0.10.5" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/clustermate/clustermate-json/0.10.5/clustermate-json-0.10.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/storemate/storemate-shared/1.1.2/storemate-shared-1.1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/ning/compress-lzf/1.0.1/compress-lzf-1.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/clustermate/clustermate-api/0.10.5/clustermate-api-0.10.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.4.0/jackson-annotations-2.4.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.4.2/jackson-core-2.4.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.4.2/jackson-databind-2.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
