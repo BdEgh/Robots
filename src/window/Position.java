@@ -7,6 +7,12 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Position {
+    @JsonProperty("isIcon")
+    private Boolean isIcon;
+
+    @JsonProperty("isMax")
+    private Boolean isMax;
+
     @JsonProperty("w")
     private Integer width;
 
@@ -21,6 +27,26 @@ public class Position {
 
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    @JsonProperty("isIcon")
+    public Boolean getIconState() {
+        return isIcon;
+    }
+
+    @JsonProperty("isIcon")
+    public void setIconState(Boolean iconState) {
+        this.isIcon = iconState;
+    }
+
+    @JsonProperty("isMax")
+    public Boolean getMaxState() {
+        return isMax;
+    }
+
+    @JsonProperty("isMax")
+    public void setMaxState(Boolean maxState) {
+        this.isMax = maxState;
+    }
 
     @JsonProperty("w")
     public Integer getWidth() {

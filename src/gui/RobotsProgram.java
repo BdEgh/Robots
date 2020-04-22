@@ -1,6 +1,7 @@
 package gui;
 
 import java.awt.Frame;
+import java.beans.PropertyVetoException;
 import java.io.IOException;
 
 import javax.swing.SwingUtilities;
@@ -21,7 +22,7 @@ public class RobotsProgram
         MainApplicationFrame frame = null;
         try {
           frame = new MainApplicationFrame();
-        } catch (IOException e) {
+        } catch (IOException | PropertyVetoException e) {
           e.printStackTrace();
         }
         frame.pack();

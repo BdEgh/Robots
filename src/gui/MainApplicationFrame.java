@@ -7,6 +7,7 @@ import window.SaverWindowState;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.beans.PropertyVetoException;
 import java.io.IOException;
 
 public class MainApplicationFrame extends JFrame
@@ -14,7 +15,7 @@ public class MainApplicationFrame extends JFrame
     private final JDesktopPane desktopPane = new JDesktopPane();
     private SaverWindowState saverWindowState;
     
-    public MainApplicationFrame() throws IOException {
+    public MainApplicationFrame() throws IOException, PropertyVetoException {
         //Make the big window be indented 50 pixels from each edge
         //of the screen.
         int inset = 50;        
