@@ -1,100 +1,70 @@
 package window;
-import java.util.HashMap;
-import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Position {
-    @JsonProperty("isIcon")
-    private Boolean isIcon;
+	@JsonProperty("isIcon")
+	private Boolean isIcon;
 
-    @JsonProperty("isMax")
-    private Boolean isMax;
+	@JsonProperty("w")
+	private Integer width;
 
-    @JsonProperty("w")
-    private Integer width;
+	@JsonProperty("h")
+	private Integer height;
 
-    @JsonProperty("h")
-    private Integer height;
+	@JsonProperty("x")
+	private Integer x;
 
-    @JsonProperty("x")
-    private Integer x;
+	@JsonProperty("y")
+	private Integer y;
 
-    @JsonProperty("y")
-    private Integer y;
+	@JsonProperty("isIcon")
+	public Boolean getIconState() {
+		return isIcon;
+	}
 
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+	@JsonProperty("isIcon")
+	public void setIconState(Boolean iconState) {
+		this.isIcon = iconState;
+	}
 
-    @JsonProperty("isIcon")
-    public Boolean getIconState() {
-        return isIcon;
-    }
+	@JsonProperty("w")
+	public Integer getWidth() {
+		return width;
+	}
 
-    @JsonProperty("isIcon")
-    public void setIconState(Boolean iconState) {
-        this.isIcon = iconState;
-    }
+	@JsonProperty("w")
+	public void setWidth(Integer width) {
+		this.width = width;
+	}
 
-    @JsonProperty("isMax")
-    public Boolean getMaxState() {
-        return isMax;
-    }
+	@JsonProperty("h")
+	public Integer getHeight() {
+		return height;
+	}
 
-    @JsonProperty("isMax")
-    public void setMaxState(Boolean maxState) {
-        this.isMax = maxState;
-    }
+	@JsonProperty("h")
+	public void setHeight(Integer height) {
+		this.height = height;
+	}
 
-    @JsonProperty("w")
-    public Integer getWidth() {
-        return width;
-    }
+	@JsonProperty("x")
+	public Integer getX() {
+		return x;
+	}
 
-    @JsonProperty("w")
-    public void setWidth(Integer width) {
-        this.width = width;
-    }
+	@JsonProperty("x")
+	public void setX(Integer x) {
+		this.x = x;
+	}
 
-    @JsonProperty("h")
-    public Integer getHeight() {
-        return height;
-    }
+	@JsonProperty("y")
+	public Integer getY() {
+		return y;
+	}
 
-    @JsonProperty("h")
-    public void setHeight(Integer height) {
-        this.height = height;
-    }
-
-    @JsonProperty("x")
-    public Integer getX() {
-        return x;
-    }
-
-    @JsonProperty("x")
-    public void setX(Integer x) {
-        this.x = x;
-    }
-
-    @JsonProperty("y")
-    public Integer getY() {
-        return y;
-    }
-
-    @JsonProperty("y")
-    public void setY(Integer y) {
-        this.y = y;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
+	@JsonProperty("y")
+	public void setY(Integer y) {
+		this.y = y;
+	}
 }
