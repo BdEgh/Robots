@@ -1,4 +1,5 @@
 package other;
 
-public class Observer {
+public interface Observer<T> {
+	void Update(T o);
 }
